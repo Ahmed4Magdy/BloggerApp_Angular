@@ -1,0 +1,47 @@
+h2 {
+    font-size: 50px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #333;
+    padding: 80px;
+  }
+  
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  mat-form-field input,
+  mat-form-field textarea {
+    font-size: 16px;
+  }
+  
+  mat-form-field textarea {
+    height: 100px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

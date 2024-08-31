@@ -1,0 +1,29 @@
+/* Header component styles */
+header {
+  background-image: url('/assets/header-background.jpg'); /* Background image for the header */
+  background-size: cover;
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+
+/* Icon styling */
+mat-icon {
+  color: #602020; /* White color for icons in the header */
+}
+
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+button:hover {
+  background-color: #4080c5; /* Darker shade for hover effect */
+  color: #e0e0e0; /* Light color on hover */
+}
+
+

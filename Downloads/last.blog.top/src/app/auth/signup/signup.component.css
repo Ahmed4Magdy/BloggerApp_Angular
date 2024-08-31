@@ -1,0 +1,81 @@
+h2 {
+    /* text-align: center; 
+    color: #333;
+    font-size: 40px; 
+    margin-bottom: 50px; 
+    font-family: 'Roboto', sans-serif; 
+    padding: 80px;
+     */
+     font-size: 50px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #333;
+    padding: 80px;
+}
+
+/* Center the form on the page */
+form {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 20px auto; /* Adjusted margin for closer proximity to heading */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form fields */
+mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Style the input labels */
+mat-label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Customize the input fields */
+input[matInput] {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #1e88e5; /* Primary color for the button */
+    color: #fff; /* Text color for the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Change the button color on hover */
+button[type="submit"]:hover {
+    background-color: #456fa0; /* Darker shade of primary color */
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    form {
+        margin: 10px auto; /* Adjusted margin for smaller screens */
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+    }
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Roboto', sans-serif; /* Ensure consistent font across the body */
+    margin: 0;
+    padding: 0;
+}

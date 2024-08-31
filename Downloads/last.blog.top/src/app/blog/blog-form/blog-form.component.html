@@ -1,0 +1,57 @@
+<!-- <h2>Create/Edit Post</h2>
+<form (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput type="text" [(ngModel)]="title" name="title" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Content</mat-label>
+    <textarea matInput [(ngModel)]="content" name="content" required></textarea>
+  </mat-form-field>
+
+  <button mat-raised-buttaon color="primary" type="submit">Submit</button>
+</form> -->
+
+
+
+<h2>Create/Edit Post</h2>
+<form (ngSubmit)="onSubmit()" #postForm="ngForm">
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input
+      matInput
+      type="text"
+      [(ngModel)]="title"
+      name="title"
+      #titleInput="ngModel"
+      required
+    />
+    <mat-error *ngIf="titleInput.invalid && titleInput.touched">
+      Title is required.
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Content</mat-label>
+    <textarea
+      matInput
+      [(ngModel)]="content"
+      name="content"
+      #contentInput="ngModel"
+      required
+    ></textarea>
+    <mat-error *ngIf="contentInput.invalid && contentInput.touched">
+      Content is required.
+    </mat-error>
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    [disabled]="postForm.invalid"
+  >
+    Submit
+  </button>
+</form>

@@ -1,0 +1,192 @@
+/* Blog list container */
+/* .blog-list-container {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .blog-list-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blog-list-container:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  mat-card {
+    margin-bottom: 16px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  mat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  mat-card:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  mat-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  mat-card-content {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+ 
+  button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    background-color: #004080;
+    transform: translateY(-1px);
+  }
+   */
+
+
+   /* Overall container styling */
+   h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a1a1b; /* Primary color */
+    font-size: 2em;
+  }
+  
+  /* Button styling */
+  button.mat-raised-button {
+    margin: 10px 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+  }
+  
+  /* Primary button color */
+  button.mat-raised-button[color="primary"] {
+    background-color: #3f51b5; /* Primary color */
+    color: white;
+  }
+  
+  button.mat-raised-button[color="primary"]:hover {
+    background-color: #303f9f; /* Darker shade on hover */
+  }
+  
+  /* Card styling */
+  mat-card {
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners */
+    background-color: #fff; /* White background for the card */
+  }
+  
+  /* Card title styling */
+  mat-card-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    padding: 16px;
+    border-bottom: 1px solid #ddd; /* Divider below the title */
+  }
+  
+  /* Card content styling */
+  mat-card-content {
+    font-size: 1.1em;
+    color: #666;
+    padding: 16px;
+    line-height: 1.5; /* Improve readability */
+  }
+  
+  /* Card actions styling */
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 16px;
+    border-top: 1px solid #ddd; /* Divider above the actions */
+    background-color: #f9f9f9; /* Light background for actions */
+  }
+  
+  mat-card-actions button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #3f51b5; /* Text color for action buttons */
+  }
+  
+  /* Action button colors */
+  mat-card-actions button.mat-button {
+    background-color: transparent; /* No background color */
+    border: 1px solid #3f51b5; /* Border color */
+  }
+  
+  mat-card-actions button.mat-button:hover {
+    background-color: #e8eaf6; /* Light background on hover */
+    color: #303f9f; /* Darker color on hover */
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 600px) {
+    mat-card {
+      margin: 10px;
+      max-width: 100%;
+    }
+  
+    mat-card-title {
+      font-size: 1.4em;
+    }
+  
+    mat-card-content {
+      font-size: 1em;
+    }
+  
+    button.mat-raised-button {
+      padding: 10px 20px;
+    }
+  
+    mat-card-actions button {
+      margin-left: 4px;
+      padding: 6px 12px;
+    }
+  }
+  
+  
+  button:hover{
+    background-color: #4080c5;
+    color: white;
+  }
+  
+  

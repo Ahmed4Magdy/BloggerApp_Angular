@@ -1,0 +1,32 @@
+<!-- <h2>All Blog Posts</h2>
+<button mat-raised-button color="primary" routerLink="/blogs/new">Create New Post</button>
+<div *ngFor="let post of posts">
+  <mat-card>
+    <mat-card-title>{{ post.title }}</mat-card-title>
+    <mat-card-content>{{ post.content }}</mat-card-content>
+    <mat-card-actions>
+      <button mat-button routerLink="/blogs/{{ post.id }}">View</button>
+      <button mat-button *ngIf="isAuthor(post)" (click)="editPost(post.id)">Edit</button>
+      <button mat-button *ngIf="isAuthor(post)" (click)="deletePost(post.id)">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+</div> -->
+
+<h2>All Blog Posts</h2>
+<button mat-raised-button color="primary" routerLink="/blogs/new" [disabled]="!authService.isAuthenticated()">Create New Post</button>
+
+<div *ngFor="let post of posts" class="post-container">
+  <mat-card>
+    <mat-card-title>{{ post.title }}</mat-card-title>
+    <mat-card-content>{{ post.content }}</mat-card-content>
+    <mat-card-actions>
+      <!-- View button is always enabled -->
+      <button mat-button routerLink="/blogs/{{ post.id }}">View</button>
+      
+      <!-- Edit and Delete buttons are disabled if the user is not authenticated -->
+      <button mat-button [disabled]="!authService.isAuthenticated()" (click)="editPost(post.id)">Edit</button>
+      <button mat-button [disabled]="!authService.isAuthenticated()" (click)="deletePost(post.id)">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

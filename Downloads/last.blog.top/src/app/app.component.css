@@ -1,0 +1,61 @@
+/* Toolbar styles */
+mat-toolbar {
+    background-color: #007bff; /* Primary color for the toolbar */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  mat-toolbar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  mat-toolbar:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  span {
+    font-size: 1.2rem;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  
+  button {
+    color: #fff; /* White text for toolbar buttons */
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
+  
+  /* Logo styling */
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
